@@ -1,3 +1,4 @@
+import css from './Reviews.module.css';
 const { getMovieReviews } = require('pages/API');
 const { useEffect } = require('react');
 const { useState } = require('react');
@@ -21,7 +22,7 @@ const Reviews = () => {
         <ul>
           {reviews.results.map(review => {
             return (
-              <li key={review.id}>
+              <li className={css.list} key={review.id}>
                 <p>
                   <b>{review.author}</b>
                 </p>

@@ -1,0 +1,25 @@
+.navigation {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid gray 2px;
+  padding: 8px 0px;
+  margin: 20px 0px;
+}
+
+.navigation__item {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.navigation__item:hover {
+  outline: transparent;
+  background: linear-gradient(to right, rgb(126, 125, 219), rgb(100, 172, 255));
+  color: #fff;
+}

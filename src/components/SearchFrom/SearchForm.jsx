@@ -11,7 +11,13 @@ export const SearchForm = ({ value, onSubmit }) => {
     <div>
       <Formik initialValues={{ movie: value }} onSubmit={handleSabmit}>
         <Form className={css.form}>
-          <Field type="text" name="movie" placeholder="Movie Title" required />
+          <Field
+            className={css.input}
+            type="text"
+            name="movie"
+            placeholder="Movie Title"
+            required
+          />
           <button type="submit" className={css.button}>
             Search
           </button>

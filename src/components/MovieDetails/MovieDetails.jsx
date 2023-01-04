@@ -21,14 +21,16 @@ const MovieDetails = () => {
   if (movieDetails) {
     return (
       <>
-        <Link to={backLinkHref}>Go Back</Link>
+        <Link className={css.btnBack} to={backLinkHref}>
+          Go Back
+        </Link>
         <div className={css.movieDetails}>
           <img
             className={css.moviePoster}
             src={'https://image.tmdb.org/t/p/w500/' + movieDetails.poster_path}
             alt="movie poster"
           />
-          <div>
+          <div className={css.movieInfo}>
             <h1>{movieDetails.original_title}</h1>
             <p>User Score: {Math.ceil(movieDetails.vote_average * 10)}%</p>
             <h2>Overview</h2>
@@ -42,18 +44,18 @@ const MovieDetails = () => {
             </p>
           </div>
         </div>
-        <div className={css.addInf}>
+        <div className={css.container}>
           <h3>Additional information</h3>
           <Link
             to={'cast'}
-            className={css.addLink}
+            className={css.infoBtn}
             state={{ from: location.state?.from }}
           >
             Cast
           </Link>
           <Link
             to={'reviews'}
-            className={css.addLink}
+            className={css.infoBtn}
             state={{ from: location.state?.from }}
           >
             Reviews

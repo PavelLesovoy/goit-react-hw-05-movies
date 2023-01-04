@@ -5,7 +5,8 @@ const { NavLink, Outlet } = require('react-router-dom');
 
 const StyledLink = styled(NavLink)`
   &.active {
-    color: orange;
+    color: #fff;
+    background-color: #838ae7;
   }
 `;
 

@@ -19,7 +19,7 @@ const Cast = () => {
   if (credits) {
     if (credits.cast.length) {
       return (
-        <div className={css.addInf}>
+        <div className={css.container}>
           <ul className={css.list}>
             {credits.cast.map(cast => {
               return (

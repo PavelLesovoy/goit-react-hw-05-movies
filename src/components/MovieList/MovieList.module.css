@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+.item {
+  padding-bottom: 8px;
+}
+
+.movie {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.movie:hover {
+  outline: transparent;
+  background: linear-gradient(to right, rgb(126, 125, 219), rgb(100, 172, 255));
+  color: #fff;
+}
